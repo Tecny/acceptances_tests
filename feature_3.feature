@@ -1,10 +1,10 @@
-Feature: Actualizar datos del perfil comprador
+Feature: Perfil y que contiene
 
-Como comprador quiero poder actualizar  mi información personal y datos de mi perfil para poder tener mi cuenta actualizada 
+El usuario doctor entra a su perfil  de la aplicación, donde tiene múltiples gadgets.  
 
 
-Scenario: El comprador quiere actualizar sus datos personales 
-  Given que el comprador quiere acceder a su información personal
-  When el comprador quiere acceder a su información personal
+Scenario: El usuario doctor va a ver a los pacientes que requieren de una consulta con él. 
+  Given El usuario entra a su perfil.
+  When Click en el boton “Mis pacientes”
   And se encuentra ubicado en la opción de ”Actualizar Datos”
-  Then la app permite actualizar los datos
+  Then En esta sección puede ver los pacientes que han solicitado una consulta con él.
