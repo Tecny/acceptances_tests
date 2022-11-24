@@ -1,10 +1,9 @@
 Feature: Perfil y que contiene
 
-El usuario doctor entra a su perfil  de la aplicación, donde tiene múltiples gadgets.  
+Como  paciente quiero entrar a  mi  perfil para ver los múltiples gadgets que ofrece la aplicación.  
 
 
-Scenario: El usuario doctor va a ver a los pacientes que requieren de una consulta con él. 
+Scenario: El usuario paciente ve a sus doctores 
   Given El usuario entra a su perfil.
   When Click en el boton “Mis pacientes”
-  And se encuentra ubicado en la opción de ”Actualizar Datos”
   Then En esta sección puede ver los pacientes que han solicitado una consulta con él.
