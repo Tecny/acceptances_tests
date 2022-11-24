@@ -1,10 +1,11 @@
-Feature: Reconocer cuáles empresas son confiables 
+Feature: Actualización de datos 
 
-Como dueño de un vehículo quiero saber si la empresa es confiable.
+Como doctor/paciente quiero modificar mis datos para que estén actualizados.
 
-Scenario: El comprador analiza las diferentes empresas en base a la calificación de otros compradores.
-  Given que el comprador ve buenas reseñas entra a la página de la empresa y ve precios.
-    |recomendaciones|data|
-    |reputacion|precios|
-  When ve el producto que quiere compra el producto Y manda un mensaje al chat de la empresa para preguntar sobre el delivery 
-  Then compra el producto o va al local para adquirir el servicio. 
+Scenario: El usuario quiere actualizar su información.
+  Given El usuario desea actualizar sus datos.
+  When El usuario entra en su perfil.
+  And hace click en el botón “Modificar datos”.
+      |editar datos|editar datos|
+      |editar datos|editar datos|
+  Then La aplicación le permitirá modificar sus datos.
