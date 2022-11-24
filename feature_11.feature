@@ -1,8 +1,8 @@
-Feature: Visualizar sus valoraciones
+Feature: Poder enviar la receta médica al paciente.
 
-Como empresa quiero visualizar las valoraciones del negocio 
+Como médico debo enviar la recomendación final con la respectiva receta médica.
 
-Scenario: La empresa quiere visualizar sus valoraciones
-  Given que la empresa quiere visualizar sus valoraciones 
-  When entra en el apartado de “Mis valoraciones”
-  Then podrá estar al tanto del feedback de los compradores
+Scenario: El doctor quiere enviar la receta médica al paciente.
+  Given El doctor entra al historial médico del paciente, y solicita el envío de la receta médica, en el botón “prescripción”.
+  When El doctor añade una receta médica a la cola.
+  Then El paciente recibirá la receta médica dada por el doctor.
