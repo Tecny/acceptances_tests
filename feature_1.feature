@@ -1,15 +1,15 @@
-Feature: Acceder a su información y datos del perfil 
+Feature: Registrar doctor
 
-Como comprador quiero acceder a mi información personal y datos de mi perfil para poder revisar mis datos 
+Como empleado quiero registrarme en la plataforma para poder ofrecer  mis servicios fácilmente.
 
 
-Scenario: El comprador quiere acceder a su información personal 
-  Given I have entered 50 into the calculator
-  When  presiona la opción “Configuración y privacidad”
+Scenario: El empleado quiere registrarse como médico en la plataforma
+  Given El empleado quiere registrarse como médico en la plataforma
+  When  seleccione registrarse aquí
     |necesario|datos|
     |accecibilidad|personal|
     |modificación|presentación|
-  And se encuentra ubicado en la opción de ”Información general”
-  Then la app muestra la información personal 
+  And seleccione "soy doctor"
+  Then la aplicación le envía la confirmación de la creación de su cuenta a su correo electrónico
 
 
