@@ -1,8 +1,8 @@
-Feature: Publicar articulos en promocion
+Feature:Recibir pagos
 
-Como empresa publicamos promociones de diferente artículos para llamar la atención de los usuarios 
+Como doctor calificado, recibo honorarios.
 
-Scenario: Elegimos uno o varios productos son indispensable para los usuarios
-  Given que los compradores compran más ese artículo
-  When se eligieron los artículos ahora se analiza cuando es el precio que se va a reducir.
-  Then se publica el/los artículos a un precio llamativo para los usuarios.
+Scenario: Entrar a la app, “Mis pagos”.
+  Given El doctor calificado requiere recibir honorarios, él coloca la tarifa que quiere.
+  When El doctor haya realizado un diagnóstico.
+  Then Recibe honorarios.
