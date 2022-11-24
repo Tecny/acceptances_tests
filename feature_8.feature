@@ -1,8 +1,9 @@
-Feature: Tener un chat personal con el empresario que oferta los productos 
+Feature: Solicitar consultas especializadas con el doctor
 
-Como comprador quiero seguir cotizando los productos que he observado de dicha empresa
+Como paciente quisiera reservar una consulta interna con un doctor especializado
 
-Scenario: El comprador quiere cotizar los productos de una empresa
-  Given que el comprador quiere tener una mejor cotización de productos
-  When entra, busca y compara precios
-  Then la app le brinda un botón en la empresa para poder mandar un mensaje y comienza el chat personal.
+Scenario: El paciente solicita una consulta con un doctor.
+  Given El paciente quiere una consulta con el doctor
+  When Busque un doctor con los filtros necesarios
+  And seleccione el de su preferencia
+  Then El usuario podrá solicitar su cita con el doctor.
