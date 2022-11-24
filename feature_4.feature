@@ -1,8 +1,8 @@
-Feature: Visualizar en las empresas del sector en el mapa de la app
+Feature: Perfil y que contiene 
 
-Como comprador quiero visualizar empresas en el mapa de la app para conocer la variedad de empresas a las que visitar. 
+Como  paciente quiero entrar a  mi  perfil para ver los múltiples gadgets que ofrece la aplicación.
 
-Scenario: El comprador quiere visualizar empresas 
-  Given el quiere conocer las empresas que brinda la app 
-  When presiona la opción “Más información”
-  Then la app muestra una descripción
+Scenario: El usuario paciente ve a sus doctores
+  Given El usuario entra a su perfil.
+  When Click en el boton “Mis doctores”
+  Then En esta sección puede ver los doctores con los que se ha atendido o está pendiente de atender.
