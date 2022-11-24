@@ -1,14 +1,8 @@
-Feature: Captar más clientes con sus productos
+Feature: Datos necesarios para el servicio
 
-Como empresario quiero tener más ventas y hacer que la gente conozca mi negocio, mis precios y mis servicios.
+Como doctor debo tener el historial médico de todos los pacientes que pasan por consulta.
 
-Scenario: La Empresa da a conocer sus datos.
-  Given que la Empresa comparte sus datos.
-    |necesario|datos|
-    |sucursales|lugares|
-    |afiliaciones|socios| 
-  When los usuarios ingresan al perfil de la empresa.
-    |busqueda|datos|
-    |servicios|calidad|
-    |importancia|confiabilidad|
-  Then podrá ver los productos y servicios que ofrece.
+Scenario: El doctor quiere rellenar el historial de usuario.
+  Given: El doctor analiza al paciente y pronostica los síntomas
+  When: El doctor rellenará los datos en el historial médico.
+  Then: El historial médico será guardado en una base de datos de acceso para los doctores.
