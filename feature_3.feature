@@ -1,9 +1,9 @@
 Feature: Perfil y que contiene
 
-Como  paciente quiero entrar a  mi  perfil para ver los múltiples gadgets que ofrece la aplicación.  
+Como  doctor quiero entrar a  mi  perfil para ver los múltiples gadgets que ofrece la aplicación.
 
 
-Scenario: El usuario paciente ve a sus doctores 
+Scenario: El usuario doctor va a ver a los pacientes que requieren de una consulta con él. 
   Given El usuario entra a su perfil.
   When Click en el boton “Mis pacientes”
   Then En esta sección puede ver los pacientes que han solicitado una consulta con él.
