@@ -1,9 +1,8 @@
-Feature: Iniciar sesión como vendedor en la aplicación
+Feature: Ver cálculo de cobro por consulta
 
-Como vendedor quiero iniciar sesion para empezar a ofrecer los productos y servicios de mi negocio del sector automotriz 
+Dejar que la aplicación calcule cuánto fue el cobro por consulta para mi diagnóstico
 
-Scenario: El usuario vendedor ingresa datos 
-  Given que el usuario vendedor ingresa a la app
-  When completa su usuario y contraseña 
-  And le da click a iniciar sesión
-  Then la app le dará el acceso a su cuenta de vendedor
+Scenario: Entrar a la app, a “Mis Pagos”
+  Given El usuario doctor entra a su perfil.
+  When En el boton “Mis Pagos”. La aplicación calcula la ganancia por consulta.
+  Then El usuario doctor tiene estadísticas de sus ganancias.
