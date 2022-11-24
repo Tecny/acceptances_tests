@@ -1,9 +1,7 @@
-Feature: Iniciar sesión como vendedor en la aplicación
+Feature: Ver cálculo de ganancia por mes
 
-Como vendedor quiero iniciar sesion para empezar a ofrecer los productos y servicios de mi negocio del sector automotriz 
-
-Scenario: El usuario vendedor ingresa datos 
-  Given que el usuario vendedor ingresa a la app
-  When completa su usuario y contraseña 
-  And le da click a iniciar sesión
-  Then la app le dará el acceso a su cuenta de vendedor
+Cálculo de ganancia por mes por diagnósticos realizados e interacciones con el paciente.
+Scenario: Entrar a la app,  “Mis pagos”.
+  Given El doctor cuestionando cuánto ganó por mes (bonificaciones), entra a “Mis Pagos”.
+  When Realizó cierta cantidad de diagnósticos en todo el mes.
+  Then El doctor satisfecho por recibir las bonificaciones. 
