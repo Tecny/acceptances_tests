@@ -1,9 +1,7 @@
-Feature: Iniciar sesión como comprador en la aplicación 
+Feature: Calificar el servicio
+Como usuario paciente tengo que calificar el servicio brindado.
 
-Como comprador quiero iniciar sesion para empezar a buscar los productos que necesito del sector automotriz
-
-Scenario:  El usuario comprador ingresa datos 
-  Given que el usuario comprador ingresa a la app
-  When completa su usuario y contraseña
-  And le da click a iniciar sesión
-  Then la app le dará el acceso a su cuenta de comprador 
+Scenario:  Entrar a la app, “calificar servicio”.
+  Given Entrar al aplicativo móvil, “Click” en “Rate Service”.
+  When Se siente satisfecho o insatisfecho en contexto.
+  Then Califica el servicio.
