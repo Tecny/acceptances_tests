@@ -1,12 +1,11 @@
-Feature: visualizar las empresas favoritas
+Feature: Registrar paciente
 
-Como comprador quiero visualizar mis empresas favoritas para poder tener un fácil acceso a ellas
+Como paciente quiero registrarme para buscar médicos de forma confiable
 
-Scenario: El comprador quiere visualizar sus empresas favoritas
-  Given que el comprador quiere visualizar las empresas que más le gustan 
-    |selección|datos|
-    |prefrerencias|agradables|
-    |recomendaciones|similares|
-  When presiona la opción “Empresas”
-  And se encuentra ubicado en la opción de ”Favoritos”
-  Then la app muestra las empresas favoritas
+Scenario: El usuario quiere registrarse como paciente en la aplicación.
+  Given El usuario desea registrarse en la aplicación. 
+  When El usuario esté dentro de la aplicación.
+    |registrarse aquí|
+    |datos|datos|datos|
+  And seleccione "Soy paciente”
+  Then la aplicación le envía la confirmación de la creación de su cuenta a su correo electrónico.
