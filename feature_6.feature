@@ -1,8 +1,9 @@
-Feature: Elección de una empresa 
+Feature: Buscar condición por síntomas
 
-Elegimos una empresa en base a la búsqueda que hemos hecho
+Como paciente quiero poder realizar una evaluación de lo que me está molestando para descubrir lo que padezco.
 
-Scenario: Vamos elegir de las diferentes empresas y elegiremos comparando precios y opiniones de los usuarios.
-  Given que comparamos precios vimos que manejaban precios parecidos.
-  When vimos las reseñas de los usuarios tienen buenas recomendaciones y decidimos ver los productos que venden
-  Then nos decidimos por una empresa por el stock de sus productos.
+Scenario: El paciente solicita una evaluación de su salud.
+  Given El usuario quiere saber lo que padece.
+  When El usuario se posicione en su perfil
+  And hace clic en “+ Nuevo Diagnóstico con IA”.
+  Then  El usuario podrá realizar su evaluación y el sistema le enviará un informe.
